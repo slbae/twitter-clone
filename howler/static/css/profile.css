@@ -1,0 +1,88 @@
+body {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.howler {
+    font-size: 30pt;
+}
+
+#profile-info {
+    text-align: center;
+}
+
+.pic {
+    height: 200px;
+    width: 150px;
+}
+
+#follow-btn {
+    margin-top: 10px;
+    grid-column: 5;
+    grid-row: 1;
+}
+
+#following-list-container {
+    max-width: 300px; /* Adjust based on your design */
+
+}
+
+#following-list {
+    list-style-type: none;
+    padding: 10px;
+}
+
+#following-list li {
+    margin-bottom: 5px;
+}
+
+#following-list li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.search-btn {
+    height: calc(1.5em + .75rem + 2px);
+    font-size: 1rem;
+    padding: .375rem .75rem;
+    margin-left: 10px;
+}
+
+.howl {
+    border: 2px solid rgba(238, 56, 56, 0.789);
+    padding: 15px;
+    margin: 15px;
+    width: 60%;
+    display: grid;
+    border-radius: 5px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.author-name {
+    font-weight: bold;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.username {
+    grid-row: 1;
+    grid-column: 3;
+    color: #666;
+}
+
+.date {
+    color: black;
+    grid-row: 1;
+    grid-column: 6;
+}
+
+.howl-text {
+    grid-row: span 2;
+    grid-column: span 6;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href='./css/main.css' rel='stylesheet'/>
+    <title>Howler</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand howler" href="#">Howler</a>
+            <form id="searchForm" class="d-flex">
+                <input type="text" id="searchUser" name="searchUser" class="form-control mb-3"
+                    placeholder="Search Username"/>
+                <button type="submit" class="btn btn-primary btn-sm search-btn">Search</button>
+            </form>
+            <a id="user-info"></a>
+        </div>
+    </nav>    
+
+    <div class="container mt-4 d-flex flex-column align-items-center">
+        <form id="howlForm" class="mb-3">
+            <input type="text" id="howlText" name="howlText" class="form-control mb-3 big-textbox"
+                placeholder="What's howling?"/>
+            <button class="btn btn-primary">Howl</button>
+        </form>
+        <div id="feed-container" class="container mt-4 d-flex flex-column align-items-center"></div>
+    </div>
+
+    <script src="./js/howls.js" type="module"></script>
+</body>
+
+</html>
