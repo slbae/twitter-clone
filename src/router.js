@@ -9,14 +9,6 @@ const bodyParser = require('body-parser');
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
 
-let currentUser = {
-    "id": 1,
-    "first_name": "Stu",
-    "last_name": "Dent",
-    "username": "student",
-    "avatar": "https://robohash.org/veniamdoloresenim.png?size=64x64&set=set1"
-};
-
 const follows = require('./data/follows.json');
 const users = require('./data/users.json');
 const howls = require('./data/howls.json');
@@ -31,7 +23,6 @@ router.post('/api', (req, res) => {
     const userFound = Object.values(users).find(user => user.username === username);
     req.session.user = userFound;
     if (userFound) {
-        //currentUser = userFound; // Store current authenticated user
         // Need to provide the full path to the file rather than a relative path for sendFile
         const mainPath = path.join(__dirname, '../templates/main.html');
         // User is authenticated and sent to Howler main page
