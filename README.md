@@ -34,7 +34,7 @@ This is the main view of Howler and allows users to post a new howl and view how
 
 ### User Profile Page
 
-Users can view other users' profiles, which will contain their name, username, a list of users they follow, and will display the howls posted by that user in reverse chronological order. If the logged-in user follows the owner of a profile, this page will display an indication of that and the ability to unfollow. Otherwise, there is an option to follow the user so that their howls will be displayed in the logged-in user's main page. The user profile page looks like this:
+Users can view other users' profiles, which will contain their name, username, a list of users they follow, and will display the howls posted by that user in reverse chronological order. If the logged-in user follows the owner of a profile, this page will display an indication of that and the ability to unfollow. Otherwise, there is an option to follow the user so that their howls will be displayed in the logged-in user's main page. Click on a user's name or avatar to go to their profile page. The user profile page looks like this:
 
 ![](imgs/howler-profile.png)
 
