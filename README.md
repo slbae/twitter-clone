@@ -1,4 +1,4 @@
-# Homework 4: Howler
+# Howler
 
 To run:
 1. Clone this repo
